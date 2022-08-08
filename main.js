@@ -28,8 +28,15 @@ const createWindow = () => {
   });
   // mainWindow.setIcon(path.join(__dirname, "Icon.png"));
 
-  mainWindow.on("ready-to-show", ()=>{
-      mainWindow.show();
+  mainWindow.webContents.on("did-attach-webview", (e, webContents) => {
+    webContents.on("new-window", (e, url) => {
+      e.preventDefault();
+      webContents.loadURL(url);
+    });
+  });
+
+  mainWindow.on("ready-to-show", () => {
+    mainWindow.show();
   });
 
   // and load the index.html of the app.
