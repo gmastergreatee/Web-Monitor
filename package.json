@@ -1,0 +1,14 @@
+{
+  "name": "web-monitor",
+  "version": "1.0.0",
+  "description": "monitor multiple websites at the same time",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gmastergreatee",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.1"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Monitor</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="./assets/vue.min.js"></script>
+    <script src="./assets/index.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="vuejify" class="df fdc h-100 w-100">
+        <div class="df fdc h-100 w-100 f1 pr">
+            <div class="df fdr f1">
+                <div class="df fdc f1 br bb">
+                    <div class="df fdr px-1 my-1">
+                        <a href="#" class="mr-1" @click="go_back_link(1)">Back</a>
+                        <input type="text" class="f1 mr-1" v-model="link1">
+                        <a href="#" class="mr-1" @click="go_link(1)">Go</a>
+                        <a href="#" @click="save_link(1)">Save</a>
+                    </div>
+                    <webview class="f1" src="./assets/dummy_page.html"></webview>
+                </div>
+                <div class="df fdc f1 bb">
+                    <div class="df fdr px-1 my-1">
+                        <a href="#" class="mr-1" @click="go_back_link(2)">Back</a>
+                        <input type="text" class="f1 mr-1" v-model="link2">
+                        <a href="#" class="mr-1" @click="go_link(2)">Go</a>
+                        <a href="#" @click="save_link(2)">Save</a>
+                    </div>
+                    <webview class="f1" src="./assets/dummy_page.html"></webview>
+                </div>
+            </div>
+            <div class="df fdr f1">
+                <div class="df fdc f1 br">
+                    <div class="df fdr px-1 my-1">
+                        <a href="#" class="mr-1" @click="go_back_link(3)">Back</a>
+                        <input type="text" class="f1 mr-1" v-model="link3">
+                        <a href="#" class="mr-1" @click="go_link(3)">Go</a>
+                        <a href="#" @click="save_link(3)">Save</a>
+                    </div>
+                    <webview class="f1" src="./assets/dummy_page.html"></webview>
+                </div>
+                <div class="df fdc f1">
+                    <div class="df fdr px-1 my-1">
+                        <a href="#" class="mr-1" @click="go_back_link(4)">Back</a>
+                        <input type="text" class="f1 mr-1" v-model="link4">
+                        <a href="#" class="mr-1" @click="go_link(4)">Go</a>
+                        <a href="#" @click="save_link(4)">Save</a>
+                    </div>
+                    <webview class="f1" src="./assets/dummy_page.html"></webview>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

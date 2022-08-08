@@ -1,0 +1,91 @@
+.df {
+  display: flex;
+}
+
+.fdr {
+  flex-direction: row;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.wp-250 {
+  width: 250px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.br {
+  border-right: 1px solid black;
+}
+
+.bb {
+  border-bottom: 1px solid black;
+}
+
+.pr {
+  position: relative;
+}
+
+.p-1 {
+  padding: 4px;
+}
+
+.mx-1,
+.ml-1 {
+  margin-left: 4px;
+}
+
+.mx-1,
+.mr-1 {
+  margin-right: 4px;
+}
+
+.my-1,
+.mt-1 {
+  margin-top: 4px;
+}
+
+.my-1,
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.px-1,
+.pl-1 {
+  padding-left: 4px;
+}
+
+.px-1,
+.pr-1 {
+  padding-right: 4px;
+}
+
+.py-1,
+.pt-1 {
+  padding-top: 4px;
+}
+
+.py-1,
+.pb-1 {
+  padding-bottom: 4px;
+}
